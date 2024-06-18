@@ -38,7 +38,7 @@ h1, h2 {
 }
 
 h2.section-title {
-    font-size: 2rem;
+    font-size: 1.5rem; /* Adjusted size for better fit on mobile */
     margin-bottom: 20px;
     border-bottom: 2px solid #19376D;
     padding-bottom: 10px;
@@ -55,6 +55,7 @@ h2.section-title::after {
     top: 50%;
     transform: translateY(-50%);
     transition: transform 0.3s ease;
+    font-size: 1rem; /* Adjusted size for better fit on mobile */
 }
 
 h2.section-title.expanded::after {
@@ -82,4 +83,15 @@ footer {
     padding: 10px;
     background: #19376D;
     color: #fff;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+    h2.section-title {
+        font-size: 1.25rem; /* Further adjustment for smaller screens */
+    }
+    
+    h2.section-title::after {
+        font-size: 0.875rem; /* Further adjustment for smaller screens */
+    }
 }
