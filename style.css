@@ -15,7 +15,7 @@ header {
 }
 
 header .navbar-brand img {
-    width: 40px;
+    width: 60px; /* Increase the width */
     height: auto;
 }
 
